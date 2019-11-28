@@ -168,49 +168,45 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.main-navigation {
-  width: 100%;
-  height: 90px;
-  background: #FFFFFF;
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0px;
+  align-items: center;
+  padding-bottom: 10px;
   border-bottom: 2px dashed #C0C0C0;
 }
-.main-navigation .nav-container {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 @media (max-width: 500px) {
-  .main-navigation .nav-container {
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 10px;
+  .top-header {
+    flex-direction: column;
+    margin-bottom: 0px;
   }
 }
-.main-navigation .nav {
-  width: 350px;
+.top-header h1 {
+  color: #212529;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-top: 30px;
+}
+.top-header nav {
+  width: 40%;
   display: flex;
   justify-content: space-evenly;
+  font-size: 1.5rem;
+  align-items: center;
 }
 @media (max-width: 500px) {
-  .main-navigation .nav {
+  .top-header nav {
     width: 100%;
-    justify-content: space-around;
   }
 }
-.main-navigation a {
-  font-size: 1.6rem;
-  color: #212529;
+.top-header nav a {
   text-decoration: none;
-}
-@media (max-width: 500px) {
-  .main-navigation .logo-heading {
-    font-size: 3rem;
-  }
+  color: #212529;
 }
 .footer {
   width: 100%;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed silver;
   background: #FFEBCD;
 }
 .footer p {
@@ -218,4 +214,132 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 85%;
+  }
+}
+.home .content-section {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 2px dashed #C0C0C0;
+  padding-top: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-left: 2px;
+    margin-top: 30px;
+  }
+}
+.home .content-section .text-content {
+  width: 48%;
+  padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    margin: 10px 10px;
+    padding-right: 10px;
+  }
+}
+.home .content-section .img-content {
+  width: 48%;
+  padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    padding-left: 2%;
+    width: 100%;
+  }
+}
+.home .content-section .img-content img {
+  border-radius: 10px;
+}
+.home .inverse-content {
+  padding-bottom: 30px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+}
+.home .inverse-content .text-content {
+  padding-left: 1%;
+  padding-right: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    width: 100%;
+    margin: 10px 10px;
+    padding-right: 20%;
+  }
+}
+.home .inverse-content .img-content {
+  padding-right: 1%;
+  padding-left: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    padding-left: 2%;
+    width: 100%;
+  }
+}
+.home .content-destination {
+  width: 75%;
+  margin: 0 auto 30px;
+}
+.home .content-destination img {
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+    margin-top: 10px;
+    padding: 3% 3% 0 2%;
+  }
+}
+.home .content-pick {
+  padding-top: 30px;
+  border-top: 2px dashed #C0C0C0;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px 5px 0 5px;
+  }
+}
+.home .content-pick .destination {
+  width: 30%;
+  margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+    padding-left: 5px;
+  }
+}
+.home .content-pick .btn {
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  opacity: 0.8;
+  background: #17A2B8;
+  color: white;
+  border-radius: 10px;
+}
+.home .content-pick .btn:hover {
+  transition: 300ms;
+  opacity: 4;
 }
